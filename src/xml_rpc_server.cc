@@ -29,7 +29,7 @@ XmlRpcServer::XmlRpcServer()
     _accept_retry_time_sec(0.0)
 {
 #if !defined(_WINDOWS)
-  struct rlimit limit = { .rlim_cur = 0, .rlim_max = 0 };
+  struct rlimit limit = { 0, 0 };
   unsigned int max_files = 1024;
 
   if(getrlimit(RLIMIT_NOFILE, &limit) == 0) {
@@ -223,7 +223,7 @@ int XmlRpcServer::countFreeFDs() {
 #if !defined(_WINDOWS)
   int free_fds = 0;
 
-  struct rlimit limit = { .rlim_cur = 0, .rlim_max = 0 };
+  struct rlimit limit = { 0, 0 };
 
   // Get the current soft limit on the number of file descriptors.
   if(getrlimit(RLIMIT_NOFILE, &limit) == 0) {

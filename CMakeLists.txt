@@ -7,7 +7,7 @@ if(NOT CMAKE_CXX_STANDARD)
 endif()
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic -fPIC)
+  add_compile_options(-Wall -Wpedantic -fPIC)
 endif()
 
 find_package(ament_cmake REQUIRED)
@@ -21,16 +21,16 @@ include_directories(
 link_directories(${ament_LIBRARY_DIRS})
 
 add_library(xmlrpcpp
-  src/XmlRpcClient.cpp
+  src/xml_rpc_client.cc
 	#TODO(bpwilcox):port for ROS2 
-  #src/XmlRpcDispatch.cpp  
-  src/XmlRpcServer.cpp
-  src/XmlRpcServerConnection.cpp
-  src/XmlRpcServerMethod.cpp
-  src/XmlRpcSocket.cpp
-  src/XmlRpcSource.cpp
-  src/XmlRpcUtil.cpp
-  src/XmlRpcValue.cpp
+  #src/xml_rpc_Dispatch.cc  
+  src/xml_rpc_server.cc
+  src/xml_rpc_server_connection.cc
+  src/xml_rpc_server_method.cc
+  src/xml_rpc_socket.cc
+  src/xml_rpc_source.cc
+  src/xml_rpc_util.cc
+  src/xml_rpc_value.cc
   libb64/src/cdecode.c
   libb64/src/cencode.c
 )
