@@ -1,6 +1,3 @@
-> This project is an updated version of the ROS2 port for the XmlRpc++ project, which you can take a look by clicking on this [link](https://github.com/bpwilcox/xmlrpcpp).
----
-
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
