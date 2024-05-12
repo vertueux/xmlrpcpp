@@ -1,17 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+> This project is an updated version of the ROS2 port for the XmlRpc++ project, which you can take a look by clicking on this [link](https://github.com/bpwilcox/xmlrpcpp).
+---
+
 <html>
 	<head>
-		<title>XmlRpc++ Library</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 		<meta http-equiv="Content-language" content="en-US">
 		<meta name="author" content="Chris Morley">
-		<meta name="copyright" content="Copyright © 2003 by Chris Morley">
+		<meta name="copyright" content="Copyright ï¿½ 2003 by Chris Morley">
 	</head>
 	<body>
 		<H3>XmlRpc++ Library</H3>
 		<P>This is version 0.7 of XmlRpc++, an implementation of the <A HREF="http://www.xmlrpc.org">
-				XmlRpc protocol</A> written in C++, based upon Shilad Sen's excellent <A HREF="http://py-xmlrpc.sourceforge.net">
-				py-xmlrpc library</A>. XmlRpc++ is designed to make it easy to incorporate 
+			XmlRpc protocol</A> written in C++, based upon Shilad Sen's excellent <A HREF="http://py-xmlrpc.sourceforge.net">
+			py-xmlrpc library</A>. XmlRpc++ is designed to make it easy to incorporate 
 			XmlRpc client and server support into C++ applications. Or use both client and 
 			server objects in your app for easy peer-to-peer support.
 		</P>
